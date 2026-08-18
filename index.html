@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Você Não Tem Problema de Foco — Tem Problema de Celular — R$ 34,90</title>
+    <meta name="description"
+        content="Por que sua atenção quebra em 3 minutos e o que fazer a respeito. Ebook direto ao ponto por R$ 34,90." />
+    <meta property="og:title" content="Você Não Tem Problema de Foco — Tem Problema de Celular" />
+    <meta property="og:description" content="Seu foco não está quebrado, só foi treinado errado. Ebook por R$ 34,90." />
+    <meta property="og:type" content="product" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --bg: #0d0d0d;
+            --bg-2: #151515;
+            --card: #131313;
+            --yellow: #e8e34a;
+            --ink: #f5f5f2;
+            --muted: #9a9a94;
+            --line: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--ink);
+            font-family: "Sora", system-ui, sans-serif;
+            font-weight: 300;
+            line-height: 1.72;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 800;
+            line-height: 1.08;
+            letter-spacing: -0.025em;
+        }
+
+        .wrap {
+            max-width: 1060px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        section {
+            padding: 84px 0;
+        }
+
+        .eyebrow {
+            font-size: 0.7rem;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: var(--yellow);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .lead {
+            color: var(--muted);
+            font-size: 1.05rem;
+            max-width: 60ch;
+        }
+
+        .btn-comprar {
+            position: relative;
+            display: inline-block;
+            background: var(--yellow);
+            color: #101010;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 18px 32px;
+            border-radius: 4px;
+            letter-spacing: -0.01em;
+            transition:
+                transform 0.15s ease,
+                background 0.15s ease;
+        }
+
+        .btn-comprar:hover {
+            transform: translate(-2px, -2px);
+            background: #f2ed63;
+            box-shadow: 4px 4px 0 rgba(232, 227, 74, 0.35);
+        }
+
+        .btn-comprar.lg {
+            font-size: 1.1rem;
+            padding: 22px 44px;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100svh;
+            display: flex;
+            align-items: center;
+            padding: 110px 0 80px;
+            background:
+                radial-gradient(80% 60% at 20% 0%, rgba(232, 227, 74, 0.09), transparent 60%),
+                linear-gradient(180deg, #0d0d0d, #151515);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(0deg,
+                    rgba(255, 255, 255, 0.022) 0 1px,
+                    transparent 1px 4px);
+            pointer-events: none;
+        }
+
+        .hero .wrap {
+            position: relative;
+            z-index: 2;
+        }
+
+        .alert-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid rgba(232, 227, 74, 0.4);
+            color: var(--yellow);
+            font-size: 0.72rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            padding: 8px 14px;
+            border-radius: 3px;
+            margin-bottom: 26px;
+        }
+
+        .alert-tag i {
+            width: 7px;
+            height: 7px;
+            background: var(--yellow);
+            border-radius: 50%;
+            animation: blip 1.8s infinite;
+        }
+
+        @keyframes blip {
+
+            0%,
+            60%,
+            100% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 0.2;
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.3rem, 7vw, 4.6rem);
+            max-width: 15ch;
+        }
+
+        .hero h1 span {
+            color: var(--yellow);
+        }
+
+        .hero .sub {
+            margin-top: 24px;
+            color: #cfcfc9;
+            font-size: clamp(1.02rem, 2.1vw, 1.24rem);
+            max-width: 46ch;
+            font-weight: 300;
+        }
+
+        .hero-actions {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .note {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        /* FAMILIAR */
+        .familiar {
+            background: var(--bg-2);
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .familiar h2 {
+            font-size: clamp(1.8rem, 4.2vw, 2.8rem);
+        }
+
+        .scene {
+            margin-top: 40px;
+            display: grid;
+            gap: 0;
+            border-left: 2px solid rgba(232, 227, 74, 0.35);
+        }
+
+        .scene div {
+            padding: 16px 0 16px 24px;
+            position: relative;
+            color: #d5d5cf;
+            font-size: 1.02rem;
+        }
+
+        .scene div::before {
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: 26px;
+            width: 10px;
+            height: 2px;
+            background: var(--yellow);
+        }
+
+        .scene div b {
+            color: var(--yellow);
+            font-weight: 600;
+            font-variant-numeric: tabular-nums;
+            margin-right: 10px;
+        }
+
+        /* CARDS */
+        .grid3 {
+            margin-top: 46px;
+            display: grid;
+            gap: 18px;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        }
+
+        .kard {
+            background: var(--card);
+            border: 1px solid rgba(232, 227, 74, 0.28);
+            border-radius: 6px;
+            padding: 30px 26px;
+        }
+
+        .kard .idx {
+            font-size: 0.72rem;
+            letter-spacing: 0.2em;
+            color: var(--yellow);
+            font-weight: 600;
+        }
+
+        .kard h3 {
+            font-size: 1.24rem;
+            margin: 12px 0 10px;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+        }
+
+        .kard p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .kard.sol {
+            border-color: var(--line);
+            border-top: 2px solid var(--yellow);
+        }
+
+        .kard.sol .check {
+            width: 30px;
+            height: 30px;
+            border: 1.5px solid var(--yellow);
+            border-radius: 4px;
+            display: grid;
+            place-items: center;
+            margin-bottom: 16px;
+        }
+
+        .kard.sol .check svg {
+            stroke: var(--yellow);
+        }
+
+        /* CHECKLIST */
+        .checklist-wrap {
+            background: var(--bg-2);
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .checklist {
+            margin-top: 34px;
+            display: grid;
+            gap: 10px;
+            max-width: 640px;
+        }
+
+        .cl-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 5px;
+            padding: 15px 18px;
+            cursor: pointer;
+            user-select: none;
+            transition:
+                border-color 0.15s ease,
+                background 0.15s ease;
+        }
+
+        .cl-item:hover {
+            border-color: rgba(232, 227, 74, 0.4);
+        }
+
+        .cl-box {
+            flex: none;
+            width: 21px;
+            height: 21px;
+            border: 1.5px solid #5c5c58;
+            border-radius: 3px;
+            display: grid;
+            place-items: center;
+            transition:
+                background 0.15s ease,
+                border-color 0.15s ease;
+        }
+
+        .cl-box svg {
+            stroke: #101010;
+            opacity: 0;
+            transform: scale(0.6);
+            transition:
+                opacity 0.15s ease,
+                transform 0.15s ease;
+        }
+
+        .cl-item.on .cl-box {
+            background: var(--yellow);
+            border-color: var(--yellow);
+        }
+
+        .cl-item.on .cl-box svg {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .cl-item span {
+            font-size: 0.98rem;
+            color: #d5d5cf;
+        }
+
+        .cl-item.on span {
+            color: var(--muted);
+            text-decoration: line-through;
+        }
+
+        /* FRASE */
+        .quote {
+            text-align: center;
+        }
+
+        .quote p {
+            font-size: clamp(1.7rem, 5vw, 3.1rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.12;
+            max-width: 18ch;
+            margin: 0 auto;
+        }
+
+        .quote p em {
+            color: var(--yellow);
+            font-style: normal;
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            background: var(--bg-2);
+            border-top: 1px solid var(--line);
+        }
+
+        .cta h2 {
+            font-size: clamp(1.8rem, 4.4vw, 2.9rem);
+            max-width: 19ch;
+            margin: 0 auto;
+        }
+
+        .cta .lead {
+            margin: 20px auto 0;
+        }
+
+        .price {
+            margin: 34px 0 26px;
+            font-size: clamp(2.6rem, 7vw, 3.7rem);
+            font-weight: 800;
+            color: var(--yellow);
+            letter-spacing: -0.04em;
+        }
+
+        .price small {
+            display: block;
+            font-size: 0.74rem;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            color: var(--muted);
+            font-weight: 400;
+            margin-bottom: 6px;
+        }
+
+        footer {
+            padding: 34px 0;
+            border-top: 1px solid var(--line);
+            color: #6f6f6a;
+            font-size: 0.82rem;
+        }
+
+        footer .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: space-between;
+        }
+
+        .reveal {
+            opacity: 0;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+
+        @media (max-width: 640px) {
+            section {
+                padding: 62px 0;
+            }
+
+            .btn-comprar {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="wrap">
+            <div class="alert-tag reveal"><i></i> Diagnóstico errado</div>
+            <h1 class="reveal">Você Não Tem Problema de Foco — Tem Problema de <span>Celular</span></h1>
+            <p class="sub reveal">
+                Não é preguiça, não é falta de disciplina e provavelmente não é déficit de atenção. É um
+                aparelho projetado por engenheiros muito bem pagos pra vencer a sua força de vontade.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#" class="btn-comprar">Quero Recuperar Meu Foco — R$ 34,90</a>
+                <span class="note">Leitura de 40 minutos · aplicável hoje</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="familiar">
+        <div class="wrap">
+            <p class="eyebrow reveal">Cena do dia a dia</p>
+            <h2 class="reveal">Isso Soa Familiar?</h2>
+            <div class="scene">
+                <div class="reveal"><b>09:00</b> Você senta pra trabalhar decidido. Hoje vai render.</div>
+                <div class="reveal"><b>09:03</b> Uma notificação. Só vou ver rápido.</div>
+                <div class="reveal"><b>09:26</b> Você está no terceiro app, sem lembrar como chegou lá.</div>
+                <div class="reveal"><b>09:27</b> Volta pra tela do trabalho e relê o mesmo parágrafo três vezes.</div>
+                <div class="reveal"><b>18:00</b> Dia acabou. A tarefa importante continua onde estava.</div>
+            </div>
+            <p class="lead reveal" style="margin-top: 32px">
+                E aí vem a conclusão errada: "eu que sou desorganizado". Não é. Você está competindo com
+                um sistema treinado pra te interromper.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <p class="eyebrow reveal">Diagnóstico</p>
+            <h2 class="reveal" style="font-size: clamp(1.8rem, 4.2vw, 2.8rem)">Por Que Isso Acontece</h2>
+            <div class="grid3">
+                <article class="kard slide-l">
+                    <span class="idx">CAUSA 01</span>
+                    <h3>Os apps são desenhados pra prender atenção</h3>
+                    <p>Rolagem infinita, recompensa variável, notificação em vermelho. Nada disso é acidente — é
+                        engenharia comportamental testada em milhões de pessoas.</p>
+                </article>
+                <article class="kard slide-l">
+                    <span class="idx">CAUSA 02</span>
+                    <h3>Seu cérebro aprendeu a fugir do desconforto</h3>
+                    <p>Toda tarefa difícil tem um momento chato. Você treinou o reflexo de escapar dele em dois segundos
+                        — e o celular está sempre a dois segundos de distância.</p>
+                </article>
+                <article class="kard slide-l">
+                    <span class="idx">CAUSA 03</span>
+                    <h3>Troca constante de tarefa custa caro</h3>
+                    <p>Cada alternância deixa um resíduo de atenção na tarefa anterior. Você não perde os 30 segundos da
+                        olhada — perde os 15 minutos seguintes.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <p class="eyebrow reveal">Tratamento</p>
+            <h2 class="reveal" style="font-size: clamp(1.8rem, 4.2vw, 2.8rem)">O Que Fazer</h2>
+            <div class="grid3">
+                <article class="kard sol slide-r">
+                    <div class="check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.4">
+                            <path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></div>
+                    <h3>Aumente o atrito do aparelho</h3>
+                    <p>Poucas mudanças de configuração que transformam o gesto automático em decisão consciente. Sem app
+                        de bloqueio caro.</p>
+                </article>
+                <article class="kard sol slide-r">
+                    <div class="check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.4">
+                            <path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></div>
+                    <h3>Treine o desconforto em blocos curtos</h3>
+                    <p>Um protocolo progressivo pra reconstruir tolerância à tarefa chata, começando de um patamar que
+                        você aguenta hoje.</p>
+                </article>
+                <article class="kard sol slide-r">
+                    <div class="check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.4">
+                            <path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></div>
+                    <h3>Uma tarefa por vez, de verdade</h3>
+                    <p>Como montar o dia pra reduzir alternância — inclusive as trocas que você nem percebe que faz.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="checklist-wrap">
+        <div class="wrap">
+            <p class="eyebrow reveal">Bônus incluso</p>
+            <h2 class="reveal" style="font-size: clamp(1.7rem, 4vw, 2.5rem)">Checklist de ambiente à prova de distração
+            </h2>
+            <p class="lead reveal" style="margin-top: 14px">Marque aqui pra sentir o gosto. No ebook vem a versão
+                completa, com o porquê de cada item.</p>
+            <div class="checklist">
+                <div class="cl-item"><span class="cl-box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke-width="3.2">
+                            <path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span><span>Celular fora do campo de visão, não só virado</span></div>
+                <div class="cl-item"><span class="cl-box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke-width="3.2">
+                            <path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span><span>Notificações desligadas por padrão, ligadas por exceção</span></div>
+                <div class="cl-item"><span class="cl-box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke-width="3.2">
+                            <path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span><span>Uma única aba aberta com a tarefa atual</span></div>
+                <div class="cl-item"><span class="cl-box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke-width="3.2">
+                            <path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span><span>Papel e caneta pra despejar o pensamento que interrompe</span></div>
+                <div class="cl-item"><span class="cl-box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke-width="3.2">
+                            <path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span><span>Horário fixo e curto pra checar mensagens</span></div>
+                <div class="cl-item"><span class="cl-box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke-width="3.2">
+                            <path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span><span>A primeira ação do bloco definida antes de sentar</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <div class="wrap">
+            <p class="reveal">Seu foco não está quebrado. Ele só foi <em>treinado errado</em>.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="wrap">
+            <h2 class="reveal">Dá pra destreinar. E é mais rápido do que você imagina.</h2>
+            <p class="lead reveal">Menos que um lanche, por um método que você aplica ainda hoje à tarde.</p>
+            <div class="price reveal"><small>Acesso imediato</small>R$ 34,90</div>
+            <a href="#" class="btn-comprar lg" id="ctaBtn">Quero Recuperar Meu Foco — R$ 34,90</a>
+            <p class="note" style="margin-top: 22px">Se você suspeita de TDAH, procure avaliação profissional — este
+                ebook não faz diagnóstico.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap">
+            <span>Você Não Tem Problema de Foco</span>
+            <span>© <span id="y"></span> — Todos os direitos reservados</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+        document.querySelectorAll(".cl-item").forEach((el) =>
+            el.addEventListener("click", () => el.classList.toggle("on"))
+        );
+
+        const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (window.gsap && !reduced) {
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.set(".reveal", { opacity: 0, y: 18 });
+            gsap.set(".slide-l", { opacity: 0, x: -34 });
+            gsap.set(".slide-r", { opacity: 0, x: 34 });
+
+            gsap.to(".hero .reveal", { opacity: 1, y: 0, duration: 0.45, ease: "power4.out", stagger: 0.07 });
+
+            gsap.utils.toArray("section").forEach((sec) => {
+                const items = sec.querySelectorAll(".reveal");
+                if (items.length)
+                    gsap.to(items, {
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.4,
+                        ease: "power4.out",
+                        stagger: 0.05,
+                        scrollTrigger: { trigger: sec, start: "top 82%" },
+                    });
+            });
+            gsap.utils.toArray(".slide-l, .slide-r").forEach((el, i) => {
+                gsap.to(el, {
+                    opacity: 1,
+                    x: 0,
+                    duration: 0.42,
+                    ease: "power4.out",
+                    scrollTrigger: { trigger: el, start: "top 88%" },
+                });
+            });
+
+            gsap.to("#ctaBtn", {
+                boxShadow: "0 0 0 6px rgba(232,227,74,.12)",
+                duration: 1.1,
+                repeat: -1,
+                yoyo: true,
+                ease: "power1.inOut",
+            });
+        } else {
+            document.querySelectorAll(".reveal, .slide-l, .slide-r").forEach((el) => (el.style.opacity = 1));
+        }
+    </script>
+</body>
+
+</html>
